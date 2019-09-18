@@ -8,6 +8,8 @@ int main() {
     int file_pipes[2];
     const char some_data[] = "123";
     char buffer[BUFSIZ + 1];
+    // Visual Studio me pedia que sea asi en vez de pid_t,
+    // pero funciona igual xDD
     __pid_t fork_result;
 
     memset(buffer, '\0', sizeof(buffer));
